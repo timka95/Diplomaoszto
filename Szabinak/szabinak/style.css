@@ -7,7 +7,7 @@
 }
 
 
-.bg{
+.bg {
   height: 100dvh;
   width: 100dvw;
   background: url(img_5470.jpg) no-repeat center center fixed;
@@ -31,10 +31,11 @@
   -webkit-perspective: 1200px;
   perspective: 1200px;
   transition: 1s;
+  transform: translateX(-50%);
 }
 
 .card:hover {
-  transform: rotate(-5deg);
+  transform: rotate(-5deg) translateX(-15%);
 }
 
 .card:hover .outside {
@@ -109,6 +110,9 @@
 
 }
 
+#ui {
+  font-size: 17px;
+}
 
 @media screen and (max-width: 850px) {
   .card {
@@ -119,6 +123,15 @@
   .inside {
     font-size: 18px;
   }
+
+  #ui {
+    font-size: 15px;
+  }
+
+  .inside {
+
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -128,7 +141,16 @@
   }
 
   .inside {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  #ui {
+    font-size: 9px;
+  }
+
+  .inside {
+
+    padding: 10px;
   }
 }
 
@@ -139,7 +161,11 @@
   }
 
   .inside {
-    font-size: 12px;
+    font-size: 8px;
+  }
+
+  #ui {
+    font-size: 7px;
   }
 
 }
